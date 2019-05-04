@@ -52,7 +52,7 @@ def get_embedding(fname, label=None):
                 l = [0] * len(data['features'][0]['layers'][0]['values'])
                 for i in range(len(l)):
                     for word in data['features']:
-                        if word != '[CLS]' or word != '[SEP]':
+                        if word['token'] != '[CLS]' or word['token'] != '[SEP]':
                             l[i] += (word['layers'][0]['values'][i] / (len(data['features']) - 2))
                 res.append(torch.FloatTensor(l))
 
