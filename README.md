@@ -1,5 +1,4 @@
 # TweetAnalysis
-Analysis Tweets using LSTM and Autoencoder
 The project is based on 4 parts:
 1. tweet collection and count statistics
 2. data preprocessing
